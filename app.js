@@ -15,6 +15,7 @@ init();
 //document.querySelector('#current-'+activePlayer).textContent = dice;
 //document.querySelector('.dice').style.display='none';
 
+//Roll button code
 
 document.querySelector('.btn-roll').addEventListener('click',function(){
 if(gamePlaying){
@@ -40,7 +41,7 @@ else{
 
 });
 
-
+//Hold Button Code
 document.querySelector('.btn-hold').addEventListener('click',function(){
 if(gamePlaying){
 
@@ -76,9 +77,8 @@ function nextPlayer(){
 
   document.querySelector('.dice').style.display='none';
 }
-
+//New Button code
 document.querySelector('.btn-new').addEventListener('click',init);
-
 
 function init(){
   scores =[0,0];
@@ -101,5 +101,4 @@ function init(){
   document.querySelector('.player-1-panel').classList.remove('active');
 
   document.querySelector('.player-0-panel').classList.add('active');
-
 }
